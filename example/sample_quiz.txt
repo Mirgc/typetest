@@ -1,0 +1,15 @@
+Cual es la capital de España?
+a) Bilbao
+b) Barcelona
+c) Cadiz
+d) Madrid
+e) Burgos
+-D
+
+Cuanto es 5+2?
+a) 7
+b) 5
+c) 3
+d) 10
+e) 15
+-A
