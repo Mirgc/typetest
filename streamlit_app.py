@@ -79,7 +79,7 @@ def quiz_page():
         
         selected_option = st.radio("Opciones:", q["options"], key=f"q{current_index}")
         
-        col1, col2 = st.columns([1, 3])
+        col1, col2 = st.columns([1, 2])
         with col1:
             if st.button("Comprobar"):
                 selected_letter = re.match(r"([a-eA-E])\)", selected_option).group(1).upper()
@@ -88,13 +88,14 @@ def quiz_page():
                     st.success("¡Correcto!")
                     st.session_state.correct_answers += 1
                 else:
-                    st.error(f"Incorrecto. La respuesta correcta es {q['answer']})")
+                    st.error(f"Incorrecto. La respuesta es {q['answer']})")
                     st.session_state.wrong_answers.append(q)
                 
                 st.session_state.current_index = min(current_index + 1, total_questions)
                 if st.session_state.current_index >= total_questions:
                     st.balloons()
-                st.rerun()
+                if st.button("Siguiente"):
+                    st.rerun()
         
         with col2:
             if st.button("Saltar pregunta"):
@@ -135,3 +136,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
