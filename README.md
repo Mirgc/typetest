@@ -1,5 +1,3 @@
-Aquí tienes un README profesional para tu proyecto Streamlit:
-
 ```markdown
 # Quiz App - Aplicación Interactiva de Preguntas y Respuestas
 
