@@ -1,4 +1,3 @@
-```markdown
 # Quiz App - Aplicación Interactiva de Preguntas y Respuestas
 
 [![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://typetest.streamlit.app/)
@@ -19,7 +18,6 @@ Aplicación web interactiva para crear y resolver cuestionarios personalizados, 
 ## Formato del Archivo de Preguntas 📝
 
 Crea un archivo `.txt` con este formato:
-
 ```
 ¿Cuál es la capital de Francia?
 a) Lyon
@@ -76,5 +74,3 @@ streamlit run app.py
 
 ## Licencia 📄
 Este proyecto está bajo licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
-
-```
