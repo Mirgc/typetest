@@ -3,7 +3,7 @@ import re
 
 def parse_quiz(file):
     content = file.getvalue().decode("utf-8")
-    questions = re.findall(r"(.*?)\n((?:[a-e]\).*?\n?)+)-([a-eA-E])", content, re.S)
+    questions = re.findall(r"(.*?)\n((?:[a-e]\).*?\n?)+)\n-([a-eA-E])", content, re.S)
     quiz = []
     for i, (question, options, answer) in enumerate(questions):
         options_list = [opt.strip() for opt in options.strip().split("\n")]
